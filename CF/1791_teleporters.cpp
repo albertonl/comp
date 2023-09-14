@@ -22,10 +22,6 @@ int main () {
         }
 
         sort(a.rbegin(), a.rend());
-        // for (auto x : a) {
-        //     cout << x << " ";
-        // }
-        // cout << endl;
         
         int res = 0;
         while (c >= a[a.size()-1] && a.size() > 0) {
