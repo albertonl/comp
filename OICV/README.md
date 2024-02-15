@@ -1,4 +1,4 @@
-# comp/OICV
+# comp/OICV
 
 Solutions to the problems of the Informatics Olympiad of the Valencian Community (Olimpíada Informàtica de la Comunitat Valenciana, [https://oicv.org](https://oicv.org)).
 
