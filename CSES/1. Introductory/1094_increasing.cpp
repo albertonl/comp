@@ -1,21 +1,22 @@
 /* https://cses.fi/problemset/task/1094 */
 
 #include <bits/stdc++.h>
-
+#pragma GCC optimize("O3")
 using namespace std;
 
 int main () {
-  int n; cin >> n;
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr);
+  
+  int n, prev, curr;
   long long count = 0; // Important! Otherwise it will overflow.
-  vector<int> v(n);
+  cin >> n >> prev;
 
-  for (int i = 0; i < n; i++) cin >> v[i];
+  while (--n) {
+    cin >> curr;
 
-  for (int i = 1; i < n; i++) {
-    if (v[i] < v[i-1]) {
-      count += v[i-1]-v[i];
-      v[i] = v[i-1];
-    }
+    if (curr < prev) count += prev - curr;
+    else prev = curr;
   }
 
   cout << count << "\n";
